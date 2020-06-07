@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <!-- Optional meta tags -->
+  <title>UFO Finder</title>
+  <meta name="author" content="Sanjive Agarwal">
+  <meta name="description" content="Rutgers Data Vizualization Bootcamp Assignment - UFO Sightings">
+  <meta name="revised" content="Saturday, June 6th, 2020, 3:22 pm">
+  <meta name="keywords" content="Rutgers Data Bootcamp - UFO Sightings">
+
+  <title>UFO Finder</title>
+
+  <!-- Favicon Icon -->
+  <link rel="shortcut icon" href="static/images/favicon.png" type="image/png" />
+
+  <!-- Bootstrap ver 3.3.7 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+  <!-- Link to Google APIS fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="static/css/style.css">
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">UFO Sightings
+            <img class="nav-ufo" src="static/images/ufo.svg">
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="hero text-center">
+      <h1>UFO Sightings</h1>
+      <p>The Truth is Out There</p>
+    </div>
+
+    <div class="container">
+      <div class="row margin-top-50">
+        <!-- Search/Filter Area -->
+        <div class="col-md-2">
+          <aside class="filters">
+            <div class="panel panel-default">
+              <div class="panel-heading text-center">Filter Search</div>
+              <div class="panel-body">
+                <!-- Search and filter Form -->
+                <form id="filter-form">
+                  <div class="form-group">
+                    <ul class="list-group" id="filters">
+                      <li class="filter list-group-item">
+                        <!-- Date Input -->
+                        <label for="date">Enter a Date:</label>
+                        <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
+                        <!-- City Input -->
+                        <label for="city">Enter a City:</label>
+                        <input class="form-control" id="city" type="text" placeholder="reedville">
+                        <!-- State Input -->
+                        <label for="state">Enter a State:</label>
+                        <input class="form-control" id="state" type="text" placeholder="ak">
+                        <!-- Country Input -->
+                        <label for="country">Enter a Country:</label>
+                        <input class="form-control" id="country" type="text" placeholder="us">
+                        <!-- Shape Input -->
+                        <label for="shape">Enter a Shape:</label>
+                        <input class="form-control" id="shape" type="text" placeholder="triangle">
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- Filter and Reset Buttons -->
+                  <div class="btn-group btn-block" role="group">
+                    <button id="filter-btn" type="button" class="btn btn-info btn-block btn-dark">Filter Table</button>
+                    <button id="reset-btn" type="reset" class="btn btn-warning btn-block btn-dark">Reset Table</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <!-- Table Area -->
+        <div class="col-md-10">
+          <div id="table-area" class="">
+            <table id="ufo-table" class="table table-striped">
+              <thead>
+                <tr>
+                  <th class="table-head">Date</th>
+                  <th class="table-head">City</th>
+                  <th class="table-head">State</th>
+                  <th class="table-head">Country</th>
+                  <th class="table-head">Shape</th>
+                  <th class="table-head">Duration</th>
+                  <th class="table-head">Comments</th>
+                </tr>
+              </thead>
+              <!-- tbody - Data Area | The tbody details will be populated on the html page on load -->
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bottom bg-dark text-center text-white">
+      <div class="footer-copyright">
+        <span>UFO Sightings</span>
+        <br>
+        <span>Copyright &copy; 2020 - Sanjive Agarwal</span>
+      </div>
+    </footer>
+
+  </div>
+</body>
+
+<!-- The below 3 references should be at the *bottom* and in the order below with data first and then the -->
+<!-- Link to D3 js Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+<!-- Link to the data file -->
+<script src="static/js/data.js"></script>
+<!-- Link to the javascript code -->
+<script src="static/js/app.js"></script>
+
+</html>
