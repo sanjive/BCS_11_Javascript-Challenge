@@ -16,6 +16,7 @@ Level 1: Automatic Table and Date Search
     - Comment
 - Created an input tag which would filter the date/time column according to the provided input and render the filtered table to the webpage.
 - The search result ensures that the filtered data presented is for the date mentioned and any previous data is removed.
+- Added a favicon icon to the webpage.
 - Created a Table reset button. Clicking on this button the table would reset and display all the records, thi sis the same data presented to user on initial load.
 
 Level 2: Multiple Search Categories
