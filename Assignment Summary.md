@@ -4,6 +4,9 @@ The assignment required that the UFO sightings in the United States data (javasr
 
 Level 1: Automatic Table and Date Search
 
+
+--> link to web page (https://sanjive.github.io/BCS_11_Javascript-Challenge/UFO-Sightings/)
+
 - Created a basic HTML web page.
 - Appended a table with the following columns to the webpage which has new rows of data for each UFO sighting.
     - Date/time
